@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d13">
+  <meta name="description" content="Deepak Rawat - SOC L1 Analyst and Cybersecurity Portfolio">
+  <title>Deepak Rawat | Cybersecurity Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">&lt;/&gt; deepak<span>.sec</span></a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+      <div id="navLinks" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="nav-cta">Contact -></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="status"><i></i> CYBERSECURITY / SOC OPERATIONS</div>
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Deepak<br><span class="gradient">Rawat.</span></h1>
+        <h2>SOC L1 Analyst <b>/</b> Security Monitoring</h2>
+        <p class="intro">
+          Investigating alerts, analyzing logs, and learning how to detect threats.
+          I build practical defensive security projects and develop SOC skills
+          through hands-on labs.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my work -></a>
+          <button class="btn secondary" id="downloadResume">Download Resume</button>
+        </div>
+
+        <div class="socials">
+          <a href="https://github.com/Deepak2652005" target="_blank" rel="noopener noreferrer">GitHub -></a>
+          <a href="https://linkedin.com/in/deepak-rawatcybersecurity" target="_blank" rel="noopener noreferrer">LinkedIn -></a>
+          <a href="https://tryhackme.com/p/deepakrt594" target="_blank" rel="noopener noreferrer">TryHackMe -></a>
+        </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-bar">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <span>soc@deepak: ~</span><span>...</span>
+        </div>
+        <div class="terminal-body">
+          <p class="comment">// security analyst workstation</p>
+          <p><b>deepak@sec:~$</b> whoami</p>
+          <p class="cyan">Deepak Rawat</p>
+          <p><b>deepak@sec:~$</b> cat role.txt</p>
+          <p class="cyan">SOC L1 Analyst</p>
+          <p><b>deepak@sec:~$</b> ./security_status.sh</p>
+          <div class="terminal-result">
+            <p>[+] Alert triage</p>
+            <p>[+] Log analysis</p>
+            <p>[+] Threat detection</p>
+            <p>[+] Incident investigation</p>
+          </div>
+          <p><b>deepak@sec:~$</b> <span class="cursor"></span></p>
+        </div>
+        <div class="terminal-footer">SYSTEM READY <span>UTF-8</span></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div><strong>TOP 2%</strong><span>TryHackMe global ranking</span></div>
+        <div><strong>PLATINUM</strong><span>TryHackMe league</span></div>
+        <div><strong>84 DAYS</strong><span>Highest practice streak</span></div>
+        <div><strong>JAVA + SQL</strong><span>Mini-SIEM development</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 / INTRODUCTION</p>
+        <h2>About <span class="gradient">me.</span></h2>
+        <p>Learning by investigating, building, and testing.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="lead">I'm a Computer Science undergraduate at DIT University, focused on developing practical skills for Security Operations Center roles.</p>
+          <p>My work includes building a Java-based Mini-SIEM, investigating phishing samples, configuring Windows Defender Firewall rules, and practicing alert triage through LetsDefend.</p>
+          <p>I enjoy understanding how suspicious activity appears in logs, how detection rules identify threats, and how analysts turn evidence into investigation findings.</p>
+          <a class="text-link" href="https://tryhackme.com/p/deepakrt594" target="_blank" rel="noopener noreferrer">View TryHackMe profile -></a>
+        </div>
+        <div class="info-list">
+          <article><small>CURRENT FOCUS</small><strong>SOC Operations &amp; Blue Team</strong></article>
+          <article><small>EDUCATION</small><strong>B.E. Computer Science</strong><p>DIT University - Expected 2027</p></article>
+          <article><small>LOCATION</small><strong>Rishikesh, Uttarakhand, India</strong></article>
+          <article><small>INTERESTS</small><div class="tags"><span>SIEM</span><span>Incident Triage</span><span>Threat Detection</span><span>DFIR Basics</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / TECHNICAL TOOLKIT</p>
+          <h2>Skills &amp; <span class="gradient">tools.</span></h2>
+          <p>Technologies and concepts explored through projects and labs.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card"><span class="card-index">01</span><div class="icon">&gt;_</div><h3>SOC Operations</h3><p>Alert triage, incident classification, IOC extraction, phishing investigation, escalation, and documentation.</p><div class="tags"><span>Alert Triage</span><span>IOC Analysis</span><span>MITRE ATT&amp;CK</span></div></article>
+          <article class="card"><span class="card-index">02</span><div class="icon">LOG</div><h3>SIEM &amp; Monitoring</h3><p>Windows Event Logs, log parsing, rule-based detection, and event correlation concepts.</p><div class="tags"><span>Java SIEM</span><span>SQLite</span><span>Sysmon</span><span>Wazuh</span><span>Splunk Basics</span></div></article>
+          <article class="card"><span class="card-index">03</span><div class="icon">{ }</div><h3>Scripting &amp; Development</h3><p>Building security utilities and automating system configuration.</p><div class="tags"><span>Java</span><span>PowerShell</span><span>Bash</span><span>SQL</span><span>Git</span></div></article>
+          <article class="card"><span class="card-index">04</span><div class="icon">NET</div><h3>Network Security</h3><p>Traffic inspection, protocol fundamentals, and defensive network configuration.</p><div class="tags"><span>TCP/IP</span><span>DNS</span><span>Wireshark</span><span>Nmap</span></div></article>
+          <article class="card"><span class="card-index">05</span><div class="icon">OS</div><h3>Operating Systems</h3><p>Windows event review, Linux permissions, administration, and host hardening.</p><div class="tags"><span>Windows</span><span>Ubuntu</span><span>Debian</span></div></article>
+          <article class="card"><span class="card-index">06</span><div class="icon">IOC</div><h3>Threat Investigation</h3><p>Reviewing email artifacts, identifying IOCs, and mapping activity to attack techniques.</p><div class="tags"><span>Phishing</span><span>IOCs</span><span>MITRE ATT&amp;CK</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <h2>Projects &amp; <span class="gradient">labs.</span></h2>
+        <p>Practical work focused on detection, investigation, and defense.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project featured">
+          <div class="project-meta"><span>01 / DETECTION ENGINE</span><small>PERSONAL PROJECT</small></div>
+          <div class="project-art">
+            <div class="log-window">
+              <div>mini_siem.log <span>EVENT VIEW</span></div>
+              <p><b>INFO</b> Event ingestion initialized</p>
+              <p><b class="warn">WARN</b> Authentication failure detected</p>
+              <p><b class="alert">ALERT</b> Rule match requires investigation</p>
+              <p><b>INFO</b> SQLite event persistence</p>
+            </div>
+          </div>
+          <h3>Java-Based Mini-SIEM Detection Engine</h3>
+          <p>A lightweight SIEM prototype to parse Windows Event Logs, evaluate detection rules, persist events, and display security activity in a JavaFX dashboard.</p>
+          <ul>
+            <li>Implemented rule-based scenarios for suspicious authentication failures.</li>
+            <li>Mapped relevant scenarios to MITRE ATT&amp;CK T1078 and T1134.</li>
+            <li>Used SQLite for historical event storage and retrieval.</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>SQLite</span><span>JavaFX</span><span>MITRE ATT&amp;CK</span></div>
+          <a class="text-link" href="https://github.com/Deepak2652005/mini-siem" target="_blank" rel="noopener noreferrer">Explore on GitHub ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project-meta"><span>02 / EMAIL INVESTIGATION</span><small>PERSONAL LAB</small></div>
+          <div class="project-art phishing-art"><span class="mail-icon">@</span><span class="mail-lines">EMAIL ANALYSIS<br>URL INSPECTION<br>IOC EXTRACTION</span></div>
+          <h3>Phishing Incident Analysis Lab</h3>
+          <p>Investigated suspicious emails, reviewing sender details, headers, URLs, attachments, and indicators of compromise.</p>
+          <ul>
+            <li>Extracted sender domains, suspicious URLs, and file hashes.</li>
+            <li>Documented findings in structured incident reports.</li>
+            <li>Mapped scenarios to ATT&amp;CK T1566.001.</li>
+          </ul>
+          <div class="tags"><span>Email Analysis</span><span>IOCs</span><span>MITRE ATT&amp;CK</span></div>
+          <a class="text-link" href="https://github.com/Deepak2652005/Phishing-Incident-Analysis-Lab" target="_blank" rel="noopener noreferrer">Explore on GitHub ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project-meta"><span>03 / ENDPOINT DEFENSE</span><small>PERSONAL LAB</small></div>
+          <div class="project-art firewall-art"><span>DEF</span><b>WINDOWS FIREWALL</b></div>
+          <h3>Windows Firewall Security Lab</h3>
+          <p>Host-level defensive configuration using Windows Defender Firewall and PowerShell to control traffic and test rule enforcement.</p>
+          <ul>
+            <li>Configured inbound and outbound traffic rules.</li>
+            <li>Restricted access according to test scenarios.</li>
+            <li>Reviewed enforcement against simulated access attempts.</li>
+          </ul>
+          <div class="tags"><span>PowerShell</span><span>Windows Firewall</span><span>Endpoint Security</span></div>
+          <a class="text-link" href="https://github.com/Deepak2652005/Windows-Firewall-Security-Lab" target="_blank" rel="noopener noreferrer">Explore on GitHub ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">04 / PRACTICAL EXPERIENCE</p>
+          <h2>Learning through <span class="gradient">practice.</span></h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience">
+            <span class="timeline-dot"></span>
+            <div><small>SECURITY OPERATIONS</small><h3>LetsDefend - SOC Simulation</h3><h4>SOC Alert Triage &amp; Investigation</h4>
+              <p>Triaged simulated alerts involving malware, ransomware, brute-force activity, privilege escalation, and unauthorized access. Practiced evidence review, threat classification, incident closure, and escalation procedures.</p>
+              <a class="text-link" href="https://letsdefend.io/user/Deepak575" target="_blank" rel="noopener noreferrer">View LetsDefend profile -></a>
+            </div>
+          </article>
+          <article class="experience">
+            <span class="timeline-dot"></span>
+            <div><small>VIRTUAL EXPERIENCE</small><h3>Mastercard - Forage</h3><h4>Cybersecurity Job Simulation</h4>
+              <p>Analyzed simulated security incidents, considered possible causes and containment actions, prioritized scenarios, and documented remediation recommendations.</p>
+              <a class="text-link" href="https://www.theforage.com/" target="_blank" rel="noopener noreferrer">Visit Forage -></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="credentials">
+      <div class="section-heading"><p class="eyebrow">05 / CREDENTIALS</p><h2>Education &amp; <span class="gradient">certifications.</span></h2></div>
+      <div class="card-grid credentials">
+        <article class="card"><small>EDUCATION / 01</small><h3>B.E. Computer Science</h3><p>DIT University</p><p>Expected graduation: June 2027</p></article>
+        <article class="card"><small>EDUCATION / 02</small><h3>Intermediate - Science</h3><p>Evergreen Senior Secondary School</p><p>Completed 2023</p></article>
+        <article class="card"><small>CERTIFICATION / 01</small><h3>Google Cybersecurity</h3><p>Certificate Pathway - Coursera</p><p>Foundations, networks, Linux, and SQL</p></article>
+        <article class="card"><small>CERTIFICATION / 02</small><h3>Mastercard</h3><p>Cybersecurity Job Simulation - Forage</p></article>
+      </div>
+    </section>
+
+    <section class="achievement-section">
+      <div class="container achievement-grid">
+        <div><p class="eyebrow">06 / HANDS-ON LEARNING</p><h2>Built through<br><span class="gradient">consistency.</span></h2><p class="achievement-copy">Practical cybersecurity challenges and defensive security exercises through TryHackMe.</p><a class="btn primary" href="https://tryhackme.com/p/deepakrt594" target="_blank" rel="noopener noreferrer">View TryHackMe profile -></a></div>
+        <div class="rank-panel">
+          <div class="project-meta"><span>TRYHACKME / PROFILE</span><small>ACHIEVEMENTS</small></div>
+          <div class="big-rank">TOP <span>2%</span></div><p class="rank-caption">GLOBAL RANKING</p><hr>
+          <div class="rank-stats"><div><b>PLATINUM</b><span>LEAGUE</span></div><div><b>55</b><span>CAPABILITY SCORE</span></div><div><b>84 DAYS</b><span>HIGHEST STREAK</span></div></div>
+          <div class="tags"><span>SOC Apprentice</span><span>First Step into SOC</span><span>Shield Apprentice</span><span>Defensive Toolsmith</span><span>Networking Nerd</span><span>Pentester Tools</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="contact-box">
+        <p class="eyebrow">07 / GET IN TOUCH</p>
+        <h2>Let's talk <span class="gradient">security.</span></h2>
+        <p>Interested in entry-level SOC opportunities, cybersecurity projects, or technical collaboration? Get in touch.</p>
+        <a class="btn primary" href="mailto:deepakrwt594@gmail.com">Contact me via email -></a>
+        <div class="socials centered"><a href="https://github.com/Deepak2652005" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://linkedin.com/in/deepak-rawatcybersecurity" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://tryhackme.com/p/deepakrt594" target="_blank" rel="noopener noreferrer">TryHackMe</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top"><a href="#home" class="logo">&lt;/&gt; deepak<span>.sec</span></a><p>Designed and built by Deepak Rawat.</p><a href="#home">BACK TO TOP</a></div>
+    <div class="container footer-bottom"><span>Copyright <span id="year"></span> Deepak Rawat</span><span>SECURITY IS A CONTINUOUS PROCESS.</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
+
+
+
+
